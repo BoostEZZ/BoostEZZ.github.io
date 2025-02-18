@@ -13,9 +13,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.header-left {
+    display: flex;
+    align-items: center;
+}
 .logo {
     max-width: 150px;
     height: auto;
+    margin: 0 20px; /* Added margin around the logo */
+}
+.contact-info {
+    color: white;
+    font-size: 1.5em; /* Increased font size */
 }
 nav ul {
     list-style: none;
@@ -36,11 +45,10 @@ nav ul li a {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 40px; /* Added margin between the lowest part of the website content and the footer */
 }
 h1 {
     color: #28a745;
-    font-size: 2.5em;
-    margin-bottom: 10px;
 }
 h2 {
     color: #28a745;
@@ -102,6 +110,13 @@ footer {
     width: 100%;
     bottom: 0;
 }
+img[src="batteryboost.jpg"] {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -133,5 +148,15 @@ footer {
     }
     nav ul li a {
         font-size: 1em;
+    }
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info {
+        font-size: 1em;
+    }
+    img[src="batteryboost.jpg"] {
+        margin-top: 10px;
     }
 }
