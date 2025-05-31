@@ -34,8 +34,8 @@ header {
     border-radius: 35px;
     padding: 10px 20px;
     display: inline-block;
-    font-size: 1.2em; /* Match paragraph font size */
-    color: white; /* Specific color for contact info box */
+    font-size: 1.2em;
+    color: white;
     background-color: rgba(130, 130, 130, 0.7);
     text-align: center;
     margin-top: 20px;
@@ -91,11 +91,10 @@ h2 {
     margin-bottom: 10px;
 }
 p {
-    font-size: 1.2em; /* Unified font size for all paragraphs */
+    font-size: 1.2em;
     line-height: 1.6;
-    text-align: center; /* Align all paragraphs to the center */
-    margin: 0 auto; /* Center paragraphs horizontally */
-    font-family: Arial, sans-serif; /* Ensure consistent font style */
+    text-align: center;
+    margin: 0 auto;
 }
 .hero {
     background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
@@ -213,7 +212,9 @@ img[src="batteryboost.jpg"] {
     margin-bottom: 20px;
 }
 .serving-area-container p {
-    color: #003aa0; /* Specific color for serving area section */
+    font-size: 1.2em;
+    color: #003aa0;
+    margin-bottom: 20px;
 }
 .serving-area-layout {
     display: flex;
@@ -229,8 +230,8 @@ img[src="batteryboost.jpg"] {
 .serving-area-list p {
     font-size: 1.2em;
     margin-bottom: 15px;
-    text-align: center; /* Align all paragraphs to the center */
-    margin: 0 auto; /* Center paragraphs horizontally */
+    text-align: center;
+    margin: 0 auto;
 }
 .serving-area-list ul {
     list-style: none;
@@ -260,8 +261,7 @@ serving-area-list ul li {
         font-size: 2.5em;
     }
     p {
-        font-size: 1em; /* Adjust font size for smaller screens */
-        /* font-family already inherited from global rule */
+        font-size: 1em;
     }
     .contact-number {
         font-size: 1.2em;
