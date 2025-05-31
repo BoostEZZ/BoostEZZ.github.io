@@ -1,20 +1,20 @@
 body {
-    font-family: Arial, sans-serif; /* Changed font to Arial, sans-serif */
+    font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: white; /* Changed background to white */
+    background-color: white;
     color: #333;
 }
 header {
-    height: 104px; /* Set consistent header height */
-    width: 100%; /* Full width */
-    background-color: #003aa0; /* Changed color to #003aa0 */
+    height: 104px;
+    width: 100%;
+    background-color: #003aa0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px; /* Match container padding */
-    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 .header-left {
     display: flex;
@@ -27,18 +27,18 @@ header {
 }
 .contact-info {
     color: white;
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1.5em;
 }
 .contact-info-box {
-    border: none; /* Removed border */
-    border-radius: 35px; /* Rounded corners */
-    padding: 10px 20px; /* Padding inside the box */
-    display: inline-block; /* Ensure the outline wraps tightly around the text */
-    font-size: 1.5em; /* Adjust font size */
-    color: white; /* Text color */
-    background-color: rgba(130, 130, 130, 0.7); /* Optional: Add a semi-transparent background */
+    border: none;
+    border-radius: 35px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(130, 130, 130, 0.7);
     text-align: center;
-    margin-top: 20px; /* Add spacing above the box */
+    margin-top: 20px;
 }
 nav ul {
     list-style: none;
@@ -56,18 +56,17 @@ nav ul li a {
     font-size: 1.2em;
 }
 .container {
-    width: 100%; /* Full width */
-    height: 60vh; /* 60% of the viewport height */
+    width: 100%;
+    height: 60vh;
     margin: 0 auto;
-    padding: 20px 40px; /* Match header padding */
-    box-sizing: border-box; /* Include padding in width calculation */
-    background: url('batteryBoost.jpg') no-repeat center center/cover; /* Set background image */
-    position: relative; /* For overlay positioning */
-    color: white; /* Ensure text is visible on dark background */
+    padding: 20px 40px;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
 }
 .container::before {
     content: '';
@@ -76,18 +75,18 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
-    z-index: 1; /* Ensure it appears below the text */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 .container * {
     position: relative;
-    z-index: 2; /* Ensure text appears above the overlay */
+    z-index: 2;
 }
 h1 {
-    color: white; /* Changed color to white */
+    color: white;
 }
 h2 {
-    color: white; /* Changed color to white */
+    color: white;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -125,24 +124,23 @@ input, button {
     font-size: 1em;
 }
 button {
-    background-color: #003aa0; /* Changed color to #003aa0 */
+    background-color: #003aa0;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 button:hover {
-    background-color: #002a80; /* Darker shade of #003aa0 */
+    background-color: #002a80;
 }
 .contact-number {
     font-size: 1.5em;
-    color: #003aa0; /* Changed color to #003aa0 */
+    color: #003aa0;
     margin-top: 20px;
 }
 footer {
-    background-color: #003aa0; /* Changed color to #003aa0 */
+    background-color: #003aa0;
     color: white;
     padding: 10px 0;
-    /*position: fixed;*/
     width: 100%;
     bottom: 0;
 }
@@ -153,7 +151,6 @@ img[src="batteryboost.jpg"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
-
 #map {
     margin-top: 40px;
     text-align: center;
@@ -176,11 +173,10 @@ img[src="batteryboost.jpg"] {
 }
 .map-container {
     margin-top: 20px;
-    border: none; /* Removed border */
+    border: none;
     border-radius: 10px;
     overflow: hidden;
 }
-
 .svg-map-container {
     margin-top: 20px;
     text-align: center;
@@ -191,64 +187,56 @@ img[src="batteryboost.jpg"] {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .serving-area-container {
     margin: 40px auto;
     padding: 20px;
-    /*background-color: #fafafa; /* Light background for contrast */
-    border: none; /* Removed border */
-    border-radius: 10px; /* Rounded corners */
-    width: 80%; /* Centered and responsive width */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    color: #003aa0; /* Text color */
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    color: #003aa0;
     text-align: center;
 }
 .serving-area-container h2 {
-    color: #003aa0; /* Blue color for the heading */
+    color: #003aa0;
     font-size: 2em;
     margin-bottom: 20px;
 }
 .serving-area-container p {
     font-size: 1.2em;
-    color: #003aa0; /* Blue color for the paragraph */
+    color: #003aa0;
     margin-bottom: 20px;
 }
 .serving-area-layout {
     display: flex;
-    flex-wrap: wrap; /* Ensure responsiveness */
+    flex-wrap: wrap;
     gap: 20px;
-    flex-direction: column; /* Stack map and list vertically */
+    flex-direction: column;
 }
 .serving-area-list {
-    flex: 1; /* Take up equal space */
-    min-width: 300px; /* Ensure a minimum width */
+    flex: 1;
+    min-width: 300px;
     text-align: left;
 }
 .serving-area-list p {
     font-size: 1.2em;
-    /*color: #003aa0;  Blue color for the paragraph */
     margin-bottom: 15px;
 }
 .serving-area-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    /*color: #003aa0;  Blue color for the list items */
     font-size: 1.2em;
 }
-.serving-area-list ul li {
+serving-area-list ul li {
     margin: 5px 0;
-    /*color: #003aa0; Blue color for each list item */
 }
-
-/* Responsive Styles */
 @media (max-width: 768px) {
     header {
-        height: 104px; /* Ensure consistent height on mobile */
-        padding: 0 20px; /* Adjust padding for smaller screens */
+        height: 104px;
+        padding: 0 20px;
     }
     .container {
-        height: 60vh; /* Maintain 60% height on smaller devices */
+        height: 60vh;
         padding: 10px;
     }
     h1 {
@@ -267,7 +255,7 @@ img[src="batteryboost.jpg"] {
         font-size: 1.2em;
     }
     .logo {
-        max-width: 100px; /* Adjust logo size for mobile */
+        max-width: 100px;
     }
     nav ul {
         flex-direction: column;
@@ -281,16 +269,16 @@ img[src="batteryboost.jpg"] {
         align-items: flex-start;
     }
     .contact-info {
-        font-size: 1em; /* Adjust font size for mobile */
+        font-size: 1em;
     }
     img[src="batteryboost.jpg"] {
         margin-top: 10px;
     }
     .serving-area-layout {
-        flex-direction: column; /* Stack map and list vertically */
+        flex-direction: column;
     }
     .map-container,
     .serving-area-list {
-        min-width: 100%; /* Full width for smaller screens */
+        min-width: 100%;
     }
 }
