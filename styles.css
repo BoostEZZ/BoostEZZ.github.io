@@ -34,8 +34,8 @@ header {
     border-radius: 35px;
     padding: 10px 20px;
     display: inline-block;
-    font-size: 1.5em;
-    color: white;
+    font-size: 1.2em; /* Match paragraph font size */
+    color: white; /* Specific color for contact info box */
     background-color: rgba(130, 130, 130, 0.7);
     text-align: center;
     margin-top: 20px;
@@ -58,7 +58,7 @@ nav ul li a {
 .container {
     width: 100%;
     height: 60vh;
-    margin: 0 auto;
+    margin: 40 auto;
     padding: 20px 40px;
     box-sizing: border-box;
     position: relative;
@@ -91,8 +91,11 @@ h2 {
     margin-bottom: 10px;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Unified font size for all paragraphs */
     line-height: 1.6;
+    text-align: center; /* Align all paragraphs to the center */
+    margin: 0 auto; /* Center paragraphs horizontally */
+    font-family: Arial, sans-serif; /* Ensure consistent font style */
 }
 .hero {
     background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
@@ -187,9 +190,17 @@ img[src="batteryboost.jpg"] {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.header-info-container {
+    margin: 40px auto;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
 .serving-area-container {
     margin: 40px auto;
-    padding: 20px;
+    padding: 20px 40px;
     border: none;
     border-radius: 10px;
     width: 80%;
@@ -202,9 +213,7 @@ img[src="batteryboost.jpg"] {
     margin-bottom: 20px;
 }
 .serving-area-container p {
-    font-size: 1.2em;
-    color: #003aa0;
-    margin-bottom: 20px;
+    color: #003aa0; /* Specific color for serving area section */
 }
 .serving-area-layout {
     display: flex;
@@ -220,6 +229,8 @@ img[src="batteryboost.jpg"] {
 .serving-area-list p {
     font-size: 1.2em;
     margin-bottom: 15px;
+    text-align: center; /* Align all paragraphs to the center */
+    margin: 0 auto; /* Center paragraphs horizontally */
 }
 .serving-area-list ul {
     list-style: none;
@@ -249,7 +260,8 @@ serving-area-list ul li {
         font-size: 2.5em;
     }
     p {
-        font-size: 1em;
+        font-size: 1em; /* Adjust font size for smaller screens */
+        /* font-family already inherited from global rule */
     }
     .contact-number {
         font-size: 1.2em;
