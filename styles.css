@@ -25,10 +25,6 @@ header {
     height: auto;
     margin: 0 20px;
 }
-.contact-info {
-    color: white;
-    font-size: 1.5em;
-}
 .contact-info-box {
     border: none;
     border-radius: 35px;
@@ -39,21 +35,6 @@ header {
     background-color: rgba(130, 130, 130, 0.7);
     text-align: center;
     margin-top: 20px;
-}
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-nav ul li {
-    display: inline;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
 }
 .container {
     width: 100%;
@@ -82,9 +63,6 @@ nav ul li a {
     position: relative;
     z-index: 2;
 }
-h1 {
-    color: white;
-}
 h2 {
     color: white;
     font-size: 2em;
@@ -96,48 +74,11 @@ p {
     text-align: center;
     margin: 0 auto;
 }
-.hero {
-    background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.hero h1 {
-    font-size: 3em;
-}
-.image-container {
-    margin-top: 20px;
-}
 .image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-button {
-    background-color: #003aa0;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background-color: #002a80;
-}
-.contact-number {
-    font-size: 1.5em;
-    color: #003aa0;
-    margin-top: 20px;
 }
 footer {
     background-color: #003aa0;
@@ -146,56 +87,10 @@ footer {
     width: 100%;
     bottom: 0;
 }
-img[src="batteryboost.jpg"] {
-    max-width: 100%;
-    height: auto;
+.map-container img {
+    width: 100%;
+    height: 400px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-#map {
-    margin-top: 40px;
-    text-align: center;
-    padding: 20px;
-}
-#map h2 {
-    color: #003aa0;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-#map ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    color: #333;
-    font-size: 1.2em;
-}
-#map ul li {
-    margin: 5px 0;
-}
-.map-container {
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.svg-map-container {
-    margin-top: 20px;
-    text-align: center;
-}
-.svg-map {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.header-info-container {
-    margin: 40px auto;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 10px;
-    width: 80%;
-    text-align: center;
 }
 .serving-area-container {
     margin: 40px auto;
@@ -216,32 +111,6 @@ img[src="batteryboost.jpg"] {
     color: #003aa0;
     margin-bottom: 20px;
 }
-.serving-area-layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-direction: column;
-}
-.serving-area-list {
-    flex: 1;
-    min-width: 300px;
-    text-align: left;
-}
-.serving-area-list p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    text-align: center;
-    margin: 0 auto;
-}
-.serving-area-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1.2em;
-}
-serving-area-list ul li {
-    margin: 5px 0;
-}
 @media (max-width: 768px) {
     header {
         height: 104px;
@@ -251,46 +120,19 @@ serving-area-list ul li {
         height: 60vh;
         padding: 10px;
     }
-    h1 {
-        font-size: 2em;
-    }
-    .hero {
-        height: 200px;
-    }
-    .hero h1 {
-        font-size: 2.5em;
+    h2 {
+        font-size: 1.5em;
     }
     p {
         font-size: 1em;
     }
-    .contact-number {
-        font-size: 1.2em;
-    }
     .logo {
         max-width: 100px;
     }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    nav ul li a {
+    .contact-info-box {
         font-size: 1em;
     }
-    .header-left {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .contact-info {
-        font-size: 1em;
-    }
-    img[src="batteryboost.jpg"] {
-        margin-top: 10px;
-    }
-    .serving-area-layout {
-        flex-direction: column;
-    }
-    .map-container,
-    .serving-area-list {
-        min-width: 100%;
+    .map-container img {
+        height: auto;
     }
 }
