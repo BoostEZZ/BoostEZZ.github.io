@@ -96,24 +96,112 @@ footer {
     height: auto;
     border-radius: 10px;
 }
-.serving-area-container {
+.serving-area-container,
+.pricing-section {
     margin: 40px auto;
-    padding: 20px 40px;
-    border: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
     border-radius: 10px;
     width: 80%;
-    color: #003aa0;
-    text-align: center;
 }
-.serving-area-container h2 {
-    color: #003aa0;
+.serving-area-container h1,
+.pricing-section h1 {
     font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+.serving-area-container p,
+.pricing-section p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
-.serving-area-container p {
-    font-size: 1.2em;
+.pricing-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.pricing-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.pricing-card.recommended {
+    border: 2px solid #003aa0;
+}
+.pricing-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.pricing-card .price {
+    font-size: 2em;
     color: #003aa0;
+    margin-bottom: 10px;
+}
+.pricing-card p {
+    font-size: 1.2em;
+    color: #333;
     margin-bottom: 20px;
+}
+.select-plan {
+    background-color: #003aa0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: auto;
+    align-self: center;
+    transition: background-color 0.3s;
+}
+.select-plan:hover {
+    background-color: #002a80;
+}
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.features li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.highlight {
+    background-color: rgba(0, 58, 160, 0.8);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 20px auto;
+}
+.non-clickable-box {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    margin-top: auto;
 }
 @media (max-width: 768px) {
     header {
