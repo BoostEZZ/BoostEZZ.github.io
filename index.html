@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battery Boost Service in Toronto | BoostEZ</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.webp" type="image/webp">
     <meta name="description" content="BoostEZ provides fast and reliable battery boost services in Toronto and the Greater Toronto Area. Call +1-437-435-1699 for immediate roadside assistance.">
     <meta name="keywords" content="battery boost, battery boost Toronto, jumpstart, dead battery, car battery service, roadside assistance, emergency battery service, GTA, Greater Toronto Area">
     <meta name="author" content="BoostEZ">
@@ -33,14 +34,37 @@
         <div class="header-left">
             <img src="logo.webp" alt="BoostEZ Battery Boost Service Logo" class="logo" width="150" height="auto">
         </div>
+        <nav class="header-nav">
+            <ul>
+                <li class="dropdown">
+                    <button class="dropdown-button">Jumpstart Near Me</button>
+                    <ul class="dropdown-menu" style="display: none;">
+                        <li><a href="ajax-jumpstart.html">Ajax Jumpstart</a></li>
+                        <li><a href="markham-jumpstart.html">Markham Jumpstart</a></li>
+                        <li><a href="north-york-jumpstart.html">North York Jumpstart</a></li>
+                        <li><a href="oshawa-jumpstart.html">Oshawa Jumpstart</a></li>
+                        <li><a href="pickering-jumpstart.html">Pickering Jumpstart</a></li>
+                        <li><a href="richmondhill-jumpstart.html">Richmond Hill Jumpstart</a></li>
+                        <li><a href="toronto-jumpstart.html">Toronto Jumpstart</a></li>
+                        <li><a href="vaughan-jumpstart.html">Vaughan Jumpstart</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <script>
+        document.querySelector('.dropdown-button').addEventListener('click', function () {
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
     <main>
         <div class="container hero-background">
             <div class="header-info-container">
                 <section id="home">
-                    <h1>Battery Boost Service in Toronto</h1>
+                    <h1>Affordable and Best Battery Boost Service in Toronto</h1>
                     <p>Car won’t start after being parked for a while? Need a battery boost?</p>
-                    <p>We provide fast and reliable battery boost services to get you back on the road!</p>
+                    <p>We provide affordable and reliable battery boost services to get you back on the road!</p>
                 </section>
                 <section id="contact">
                     <p class="contact-info-box">Contact Us: <a href="tel:+14374351699">437-435-1699</a></p>
@@ -65,6 +89,19 @@
                     <button class="select-plan">Call Us at 4374351699 for Booking It Now</button>
                 </div>
             </div>
+        </div>
+        <div class="situations-section">
+            <h1>What Situations Require a Battery Boost?</h1>
+            <div class="map-container">
+                <img src="requireBatteryBoost.webp" alt="Situations Require a Battery Boost" style="width: 100%; aspect-ratio: 16/9; border-radius: 10px;">
+            </div>
+            <p>There are many scenarios where your car might need a battery boost. Here are some common situations:</p>
+            <ul class="situations-list">
+                <li>Left headlights or interior lights on overnight.</li>
+                <li>Cold weather causing battery drainage.</li>
+                <li>Car parked for an extended period without use.</li>
+                <li>Battery nearing the end of its lifespan.</li>
+            </ul>
         </div>
         <div class="serving-area-container">
             <h1>Our Service Area</h1>
