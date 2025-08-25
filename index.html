@@ -4,13 +4,14 @@
     <!-- Google Tag Manager -->
     <script>
         window.addEventListener('load', function() {
-            setTimeout(function() {
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-KSN8DDFZ');
-            }, 2000);
+            requestIdleCallback(function() {
+                var script = document.createElement('script');
+                script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KSN8DDFZ';
+                script.async = true;
+                document.head.appendChild(script);
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            }, { timeout: 5000 });
         });
     </script>
     <!-- End Google Tag Manager -->
@@ -60,9 +61,14 @@
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
     
+    <!-- Image optimization -->
+    <link rel="preload" fetchpriority="high" as="image" href="logo.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="serviceArea.webp" type="image/webp" media="(min-width: 800px)">
+    
     <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable, stale-while-revalidate=86400">
     <meta http-equiv="Expires" content="Thu, 24 Aug 2026 00:00:00 GMT">
+    <meta http-equiv="Pragma" content="no-cache">
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="batteryboost.webp" as="image" fetchpriority="high">
@@ -264,7 +270,7 @@
     }
     </script>
 </head>
-<body>
+<body style="font-size: 16px; line-height: 1.5;">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSN8DDFZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -430,7 +436,7 @@
 
 
         <section class="service-area-section" style="padding: 4rem 1rem; background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
-            <h2 style="color: #003aa0; text-align: center; margin-bottom: 3rem; font-size: clamp(1.8rem, 4vw, 2.5rem); position: relative;">
+            <h2 style="color: #003aa0; text-align: center; margin-bottom: 3rem; font-size: clamp(1.8rem, 4vw, 2.5rem); position: relative; font-family: system-ui, -apple-system, sans-serif;">
                 Our Service Area
                 <span style="display: block; width: 80px; height: 4px; background: #003aa0; margin: 1rem auto 0;"></span>
             </h2>
