@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <!-- Google Tag Manager -->
-    <script async>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KSN8DDFZ');
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-KSN8DDFZ');
+            }, 2000);
+        });
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
@@ -53,10 +57,12 @@
     <link rel="canonical" href="https://www.boostez.ca/">
     <link rel="alternate" href="https://www.boostez.ca/" hreflang="en-ca">
     <link rel="icon" href="logo.webp" type="image/webp">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
     
     <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
+    <meta http-equiv="Expires" content="Thu, 24 Aug 2026 00:00:00 GMT">
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="batteryboost.webp" as="image" fetchpriority="high">
@@ -432,7 +438,17 @@
                 <p style="color: #444; font-size: clamp(1rem, 2vw, 1.1rem); line-height: 1.8; margin-bottom: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">We proudly serve the Greater Toronto Area, including Vaughan, Richmond Hill, Markham, Ajax, Pickering, Oshawa, and Toronto.</p>
                 <p style="color: #003aa0; font-size: clamp(1rem, 2vw, 1.1rem); font-weight: 500; margin-bottom: 2rem;">Count on us for fast and reliable car battery boosting services!</p>
                 <div class="map-container" style="box-shadow: 0 10px 30px rgba(0, 58, 160, 0.1); border-radius: 15px; overflow: hidden; max-width: 1000px; margin: 0 auto;">
-                    <img src="serviceArea.webp" alt="Service Area Map showing Greater Toronto Area" width="999" height="652" style="max-width: 100%; height: auto; display: block;">
+                    <img src="serviceArea.webp" 
+                         srcset="serviceArea.webp?size=small 380w,
+                                 serviceArea.webp?size=medium 800w,
+                                 serviceArea.webp 999w"
+                         sizes="(max-width: 400px) 380px,
+                                (max-width: 800px) 800px,
+                                999px"
+                         alt="Service Area Map showing Greater Toronto Area" 
+                         width="999" height="652" 
+                         style="max-width: 100%; height: auto; display: block;"
+                         loading="lazy">
                 </div>
             </div>
         </section>
