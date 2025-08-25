@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        window.addEventListener('load', function() {
-            requestIdleCallback(function() {
-                var script = document.createElement('script');
-                script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KSN8DDFZ';
-                script.async = true;
-                document.head.appendChild(script);
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-            }, { timeout: 5000 });
-        });
-    </script>
-    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -70,14 +57,9 @@
     <meta http-equiv="Expires" content="Thu, 24 Aug 2026 00:00:00 GMT">
     <meta http-equiv="Pragma" content="no-cache">
     
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="batteryboost.webp" as="image" fetchpriority="high">
-    <link rel="preload" href="logo.webp" as="image" fetchpriority="high">
+    <!-- Critical Resources -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    
-    <!-- Image Optimization -->
-    <link rel="preconnect" href="https://www.boostez.ca">
-    <meta name="image-rendering" content="optimizeQuality">
+    <link rel="preconnect" href="https://www.boostez.ca" crossorigin>
     <!-- Business Information Schema -->
     <script type="application/ld+json">
     {
@@ -270,7 +252,7 @@
     }
     </script>
 </head>
-<body style="font-size: 16px; line-height: 1.5;">
+<body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSN8DDFZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -443,18 +425,16 @@
             <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
                 <p style="color: #444; font-size: clamp(1rem, 2vw, 1.1rem); line-height: 1.8; margin-bottom: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">We proudly serve the Greater Toronto Area, including Vaughan, Richmond Hill, Markham, Ajax, Pickering, Oshawa, and Toronto.</p>
                 <p style="color: #003aa0; font-size: clamp(1rem, 2vw, 1.1rem); font-weight: 500; margin-bottom: 2rem;">Count on us for fast and reliable car battery boosting services!</p>
-                <div class="map-container" style="box-shadow: 0 10px 30px rgba(0, 58, 160, 0.1); border-radius: 15px; overflow: hidden; max-width: 1000px; margin: 0 auto;">
-                    <img src="serviceArea.webp" 
-                         srcset="serviceArea.webp?size=small 380w,
-                                 serviceArea.webp?size=medium 800w,
-                                 serviceArea.webp 999w"
-                         sizes="(max-width: 400px) 380px,
-                                (max-width: 800px) 800px,
-                                999px"
-                         alt="Service Area Map showing Greater Toronto Area" 
-                         width="999" height="652" 
-                         style="max-width: 100%; height: auto; display: block;"
-                         loading="lazy">
+                <div class="map-container">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="serviceArea.webp" width="999" height="652" />
+                        <source media="(min-width: 400px)" srcset="serviceArea.webp?size=medium" width="800" height="522" />
+                        <img src="serviceArea.webp?size=small" 
+                             width="380" height="248"
+                             alt="Service Area Map showing Greater Toronto Area"
+                             loading="lazy"
+                             decoding="async"
+                             style="content-visibility: auto">
                 </div>
             </div>
         </section>
