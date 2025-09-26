@@ -49,8 +49,9 @@
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
     
     <!-- Image optimization -->
+    <link rel="preload" fetchpriority="high" as="image" href="batteryboost.webp" type="image/webp">
     <link rel="preload" fetchpriority="high" as="image" href="logo.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="serviceArea.webp" type="image/webp" media="(min-width: 800px)">
+    <link rel="preload" fetchpriority="auto" as="image" href="serviceArea.webp" type="image/webp" media="(min-width: 800px)">
     
     <!-- Cache Control -->
     <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable, stale-while-revalidate=86400">
@@ -259,7 +260,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="header-left">
-            <img src="logo.webp" alt="BoostEZ Battery Boost Service Logo" class="logo" width="150" height="auto">
+            <img src="logo.webp" alt="BoostEZ Battery Boost Service Logo" class="logo" width="150" height="150">
         </div>
         <nav class="header-nav">
             <ul>

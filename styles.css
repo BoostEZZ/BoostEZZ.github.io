@@ -117,8 +117,8 @@ header {
 }
 .container {
     width: 100%;
-    height: 60vh;
-    margin: 40 auto;
+    min-height: 60vh;
+    margin: 0 auto;
     padding: 20px 40px;
     box-sizing: border-box;
     position: relative;
@@ -127,10 +127,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    contain: layout paint;
 }
 .hero-background {
     background: url('batteryboost.webp') no-repeat center center/cover;
     background-size: cover;
+    min-height: 60vh;
+    contain: layout paint;
 }
 .container::before {
     content: '';
@@ -187,6 +190,8 @@ footer {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 5000px;
 }
 
 .serving-area-container h1,
