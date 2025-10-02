@@ -45,13 +45,15 @@
     <link rel="canonical" href="https://www.boostez.ca/">
     <link rel="alternate" href="https://www.boostez.ca/" hreflang="en-ca">
     <link rel="icon" href="logo.webp" type="image/webp">
-    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Image optimization -->
-    <link rel="preload" fetchpriority="high" as="image" href="batteryboost.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="logo.webp" type="image/webp">
-    <link rel="preload" fetchpriority="auto" as="image" href="serviceArea.webp" type="image/webp" media="(min-width: 800px)">
+    <link rel="preload" as="image" href="batteryboost.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="logo.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="serviceArea.webp" type="image/webp" fetchpriority="low" media="(min-width: 800px)">
+    
+    <!-- Font optimization -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Cache Control -->
     <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable, stale-while-revalidate=86400">
