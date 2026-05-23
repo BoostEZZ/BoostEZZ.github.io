@@ -79,6 +79,24 @@ header {
     position: relative;
     margin-right: 20px;
 }
+/* CTA button style used in hero */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), #0056b3);
+    color: #fff;
+    padding: 0.9rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(0,58,160,0.12);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.cta-button:active { transform: translateY(1px); }
+.hero-cta { margin-top: 1.25rem; }
+/* Improve dropdown accessibility */
+.dropdown-button { position: relative; }
+.dropdown-menu[aria-hidden="true"] { display: none; }
+.dropdown-menu[aria-hidden="false"] { display: block; }
 .dropdown-button {
     background: none;
     border: none;
@@ -117,6 +135,15 @@ header {
     display: block;
 }
 .dropdown-menu li a:hover {
+    color: #f9f9f9;
+}
+.nav-link {
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-link:hover {
     color: #f9f9f9;
 }
 .container {
